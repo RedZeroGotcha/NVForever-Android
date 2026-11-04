@@ -1,5 +1,11 @@
 # NVForever status map (2026-10-25)
 
+Android M6 release (2026-11-04): [versioned controller source overlay](../ports/android-m6/README.md)
+adds opt-in native Android gamepad input, independent touch visibility, console
+gameplay bindings, left-stick menus and LT/RT Pip-Boy sections. Built and adapter
+tests run on RP5; full console menu parity and Android rumble remain open. This
+release overlay does not port the current desktop engine to Android.
+
 What is built, what is partly built and what is not started, per system. Built from the
 design and spec notes, [owner-review.md](owner-review.md), the script stubs audit
 ([design/script-stubs.md](design/script-stubs.md)), the script function coverage table
