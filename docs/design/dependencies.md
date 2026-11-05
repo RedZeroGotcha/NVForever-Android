@@ -1,5 +1,12 @@
 # Dependency plan: using the Rust ecosystem fully
 
+Android M6 release overlay ([build and pins](../../ports/android-m6/README.md)):
+`nvf-android-input` is an internal GPL-3.0-or-later std-only event queue, shared by
+the Android adapter and a narrowly patched winit 0.30.13 (Apache-2.0). The crate
+archive is SHA-256 pinned and its original licence files are retained when applied.
+The overlay adds no external crate version; it uses M6's Bevy 0.19.1 and existing
+libc dependency. It does not change the current engine workspace's dependencies.
+
 Owner decision (2026-10-06): use Rust "to the full extent, external libraries and
 everything". The first code was std-only only because its build sandbox could not reach
 crates.io; that restriction was lifted the same day.

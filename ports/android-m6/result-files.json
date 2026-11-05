@@ -1,0 +1,17 @@
+{
+  "android/app/build.gradle.kts": "40efc99f1b0990fe2c7f6542a1d2b12d96bed06ee497efea5cfc590cae85859f",
+  "android/app/src/main/AndroidManifest.xml": "b370be99379ec7078db9c6069695c4fd6e6993093ff50a2665b3359b713456a7",
+  "android/app/src/main/java/org/nvforever/android/LauncherActivity.java": "b515c6161f3af54b829f353e18c53eeb87bd99f7be2bd34ef3b517f8292bff4f",
+  "engine/Cargo.toml": "4778d688e3dd91df8ec1257c32eb29043abd7aee703b54403a1616052b354c0d",
+  "engine/Cargo.lock": "f816a19326897612d15aa8b46d6e4b099d2c941347d83bd3ddd355ef653e3337",
+  "engine/nvf-android/Cargo.toml": "54a6c2bd457ca997425464250059df90bb49a1c9aa07f503804befb988160e58",
+  "engine/nvf-android/src/lib.rs": "076563b3172ff4f96bf9b96ef766d0a52ec4c9a4a9065322c281262c1bf025c9",
+  "engine/nvf-android/src/controller.rs": "f0512fba573764ca76b962032b62ff087abe6d63e7a6dea631b883c5825fb020",
+  "engine/nvf-android/src/touch.rs": "50a2e82d37af2903d34f9abf7bf8c398ce5bb270c08fafb88a6c75a0159b2b5d",
+  "engine/nvf-android-input/Cargo.toml": "57cb636b7b405c0e058e9b0267be54fb743ebb51a6a66cd79b575106badbc8e2",
+  "engine/nvf-android-input/src/lib.rs": "2677de7ec1478c800a391fcb8868aab25c5eec69850441c8953b9ad6224937ce",
+  "engine/nvf-play/src/bindings.rs": "3674b14420288c83bd4d76c2593c3318d91a7093335fc01a98ed2632964e3435",
+  "engine/nvf-play/src/pad.rs": "e6675cfa8f71f3aefc7dd714e7f9a8291ca06b0fb6961164c065957b88bbe1cb",
+  "engine/vendor/winit/Cargo.toml": "a844b5a34207b9dd7b70fb3bf4ad2644b9762c5875a32544c2e15545eef10f18",
+  "engine/vendor/winit/src/platform_impl/android/mod.rs": "011659ec81846efe0fdf65a04405ac4d09983a22210c908b62906c3149a400bb"
+}

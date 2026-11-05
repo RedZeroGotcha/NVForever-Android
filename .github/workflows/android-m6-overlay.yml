@@ -1,0 +1,29 @@
+name: Android M6 source overlay
+
+on:
+  pull_request:
+    paths:
+      - 'ports/android-m6/**'
+      - '.github/workflows/android-m6-overlay.yml'
+  push:
+    paths:
+      - 'ports/android-m6/**'
+      - '.github/workflows/android-m6-overlay.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  source-replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Test archive and base guards
+        run: python -m unittest discover -s ports/android-m6/tests -v
+      - name: Reconstruct pinned M6 sources
+        run: |
+          git clone --branch v0.5.1 --depth 1 https://github.com/LootJunkieAzza/NVForever.git "$RUNNER_TEMP/nvforever-m6"
+          python ports/android-m6/apply.py "$RUNNER_TEMP/nvforever-m6"
